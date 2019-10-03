@@ -1,0 +1,55 @@
+$bgcolor : #006191; // dark blue
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: $bgcolor;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-title{
+    color: #fff;
+    text-align: center;
+
+    h2{
+      margin: 1rem 0;
+    }
+
+    .github-link{
+      display: block;
+      width: 39px;
+      height: 40px;
+      margin: auto;
+      -webkit-mask-image: url('../content/github-brands.svg');
+      background-color: #fff;
+    }
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px){
+
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px){
+
+}
