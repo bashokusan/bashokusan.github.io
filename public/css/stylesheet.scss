@@ -1,4 +1,4 @@
-$bgcolor : #006191; // dark blue
+$bgcolor : #fbe0a7; // dark blue
 
 html{
 	scroll-behavior: smooth;
@@ -22,20 +22,14 @@ body{
   align-items: center;
 
   .main-title{
-    color: #fff;
-    text-align: center;
 
-    h2{
-      margin: 1rem 0;
-    }
 
     .github-link{
       display: block;
-      width: 39px;
       height: 40px;
-      margin: auto;
-      -webkit-mask-image: url('../content/github-brands.svg');
-      background-color: #fff;
+			width: 40px;
+			margin: auto;
+      background: no-repeat url('../content/github-brands.svg');
     }
   }
 }
