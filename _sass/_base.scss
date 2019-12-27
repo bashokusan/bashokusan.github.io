@@ -1,0 +1,16 @@
+$bgcolor : #fbe0a7; // dark blue
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: $bgcolor;
+}
