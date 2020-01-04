@@ -1,15 +1,3 @@
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
-
-$on-medium:        $on-palm !default;
-$on-large:         $on-laptop !default;
-
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
 @import
   "base",             // Defines element resets.
   "layout"            // Defines structure and style based on CSS selectors.
