@@ -3,8 +3,10 @@
     <img src="{{ 'assets/images/mouse.jpg' | relative_url }}" alt="logo" width="200px">
     <nav>
         <ul>
-            {% for page in site.data.nav %}
-            <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+            {% for item in site.data.nav %}
+            <li class="{% if item.url == page.url %}active{% endif %}">
+                <a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
+            </li>
             {% endfor %}
         </ul>
     </nav>
