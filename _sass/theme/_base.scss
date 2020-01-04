@@ -12,3 +12,7 @@ html{
 body{
   background-color: $bgcolor;
 }
+
+@media screen and (min-width: $on-large){
+  background-color: rosybrown;
+}
