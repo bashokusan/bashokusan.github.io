@@ -14,5 +14,7 @@ body{
 }
 
 @media screen and (min-width: $on-large){
-  background-color: rosybrown;
+  body{
+    background-color: rosybrown;
+  }
 }
