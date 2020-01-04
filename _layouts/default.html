@@ -2,8 +2,13 @@
 layout: wrapper
 title: Home
 ---
-<header>
-    <h2>{{ layout.title }}</h2>
-    <h3>{{ page.title }}</h3>
-</header>
+
+<body>
+{% include header.html %}
+
+<h2>{{ layout.title }}</h2>
+<h3>{{ page.title }}</h3>
 {{ content }}
+
+{% include footer.html %}
+</body>
