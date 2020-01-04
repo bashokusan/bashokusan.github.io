@@ -1,2 +1,9 @@
 title: My Awesome Site
 description: My awesome description for my site
+defaults:
+  - scope:
+      path: "/"
+    values:
+      layout: "home"
+plugins:
+  - jekyll-seo-tag
