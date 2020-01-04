@@ -3,7 +3,7 @@
     <img src="{{ 'assets/images/mouse.jpg' | relative_url }}" alt="logo" width="200px">
     <nav>
         <ul>
-            {% for page in site.pages %}
+            {% for page in site.data.nav %}
             <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
             {% endfor %}
         </ul>
