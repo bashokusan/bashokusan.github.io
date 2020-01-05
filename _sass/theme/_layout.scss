@@ -7,5 +7,8 @@ header{
 }
 
 .button{
-  @include button(red, 22px);
+  @include button($color: red, $size: 22px);
+  @include media-query($on-large){
+    font-size: 3rem;
+  }
 }

@@ -1,13 +1,21 @@
 $bgcolor : #fbe0a7; // dark blue
+$white: #fff;
 
 $on-small : 600px;
 $on-medium : 768px;
 $on-large : 992px;
 $on-extralarge : 1200px;
 
-@mixin button($color, $size){
+@mixin button($color, $size, $background: $white){
   color: $color;
   font-size: $size;
+  background-color: $background;
+}
+
+@mixin media-query($device){
+  @media screen and (min-width: $device){
+    @content;
+  }
 }
 
 @import "theme/initialize";
