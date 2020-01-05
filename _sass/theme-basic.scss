@@ -1,4 +1,13 @@
 $bgcolor : #fbe0a7; // dark blue
-$on-large : 600px;
+
+$on-small : 600px;
+$on-medium : 768px;
+$on-large : 992px;
+$on-extralarge : 1200px;
+
+@mixin button($color, $size){
+  color: $color;
+  font-size: $size;
+}
 
 @import "theme/initialize";

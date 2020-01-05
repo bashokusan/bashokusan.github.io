@@ -5,3 +5,7 @@ header{
 .active a{
   color: white;
 }
+
+.button{
+  @include button(red, 22px);
+}

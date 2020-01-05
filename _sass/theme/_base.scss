@@ -13,7 +13,7 @@ body{
   background-color: $bgcolor;
 }
 
-@media screen and (min-width: $on-large){
+@media screen and (min-width: $on-medium){
   body{
     background-color: rosybrown;
   }
