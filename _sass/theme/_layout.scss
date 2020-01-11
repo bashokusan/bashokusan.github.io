@@ -119,6 +119,7 @@ header{
 @media screen and (min-width: $on-medium){
   .header-content{
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .main-title{
