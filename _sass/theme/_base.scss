@@ -3,10 +3,18 @@ html{
 }
 
 *{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  color: inherit;
+}
+
+li{
+  list-style: none;
 }
 
 body{
@@ -14,7 +22,5 @@ body{
 }
 
 @media screen and (min-width: $on-medium){
-  body{
-    background-color: rosybrown;
-  }
+
 }
