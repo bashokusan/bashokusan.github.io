@@ -48,7 +48,7 @@ header{
   margin: 0 auto;
   display: flex;
   overflow: hidden;
-  width: min-content;
+  max-width: min-content;
   max-height: 85px;
 }
 
@@ -59,7 +59,7 @@ header{
 }
 
 .to-extern__logo .svg-inline--fa{
-  width: 3rem;
+  width: 2rem;
 }
 
 .to-extern_url{
@@ -68,7 +68,8 @@ header{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 230px;
+  width: 100%;
+  text-align: center;
 
   a{
     padding: 1rem;
