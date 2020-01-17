@@ -48,7 +48,7 @@ header{
   margin: 0 auto;
   display: flex;
   overflow: hidden;
-  max-width: min-content;
+  max-width: max-content;
   max-height: 85px;
 }
 
@@ -70,6 +70,10 @@ header{
   flex-direction: column;
   text-align: center;
   padding: 1rem;
+
+  a{
+    text-decoration: none;
+  }
 }
 
 /**/
