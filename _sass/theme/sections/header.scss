@@ -1,0 +1,138 @@
+header{
+  background-color: $headerbg;
+  color: $white;
+}
+
+.info-site{
+  text-align: center;
+  font-size: .7em;
+  padding: .4rem;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.main-title{
+  margin-bottom: 3rem;
+  text-align: center;
+
+  h1{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+}
+
+.stack{
+  margin-top: 3rem;
+}
+
+.stack ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.svg-inline--fa{
+  display: block;
+  width: 2rem;
+}
+
+.to-extern{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.to-extern__card{
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius: .5rem;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  max-width: max-content;
+  max-height: 65px;
+}
+
+.to-extern__card:nth-child(1){
+  margin-bottom: 1rem;
+}
+
+.to-extern__logo{
+  padding: 1rem;
+  background-color: #fff;
+  color: rgba(0,0,0,.9);
+}
+
+.to-extern_url{
+  background-color: rgba(255,255,255,0.9);
+  color: rgba(0,0,0,.7);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+
+  a{
+    text-decoration: none;
+  }
+}
+
+/**/
+.offer-card{
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius: .5rem;
+  background-color: rgba(255,255,255,0.9);
+  width: 240px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.offer-card header{
+  position: relative;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+
+.offer-card header:after{
+  content: "";
+  height: 1px;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.offer-card footer ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button{
+  @include button($color: red, $size: 22px);
+  @include media-query($on-large){
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: $on-medium){
+  .header-content{
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .main-title{
+    margin-bottom: 0;
+    max-width: 50%;
+    text-align: start;
+  }
+
+  .to-extern_url{
+    min-width: 228px;
+  }
+}
