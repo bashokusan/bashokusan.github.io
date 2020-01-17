@@ -123,12 +123,16 @@ header{
 @media screen and (min-width: $on-medium){
   .header-content{
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .main-title{
     margin-bottom: 0;
     max-width: 50%;
     text-align: start;
+  }
+
+  .to-extern_url{
+    min-width: 228px;
   }
 }
