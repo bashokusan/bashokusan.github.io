@@ -21,6 +21,6 @@ body{
   background-color: $headerbg; //No content bg colo
 }
 
-@media screen and (min-width: $on-medium){
-
+.container{
+  padding:2rem;
 }

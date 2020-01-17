@@ -1,0 +1,59 @@
+.services{
+  color: #ffffff;
+  text-align: center;
+}
+.services h1{
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.services h1:after, .services h1:before{
+  content: '';
+  background: #ffffff;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.services h1:before{
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.services h1:after{
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.services-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.services-integration  > div, .services-list h2, .services-list h3{
+  margin-bottom: 1rem;
+}
+
+.services-list h2{
+  background: rgba(255,255,255,0.9);
+  color: #191919;
+  display: inline-block;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+}
+
+@media screen and (min-width: $on-medium){
+  .services-list{
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .services-list > div{
+    width: 50%;
+  }
+}

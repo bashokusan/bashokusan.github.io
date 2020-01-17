@@ -75,6 +75,7 @@ header{
   flex-direction: column;
   text-align: center;
   padding: 1rem;
+  height: 100%;
 
   a{
     text-decoration: none;
@@ -111,13 +112,6 @@ header{
 .offer-card footer ul{
   display: flex;
   justify-content: space-evenly;
-}
-
-.button{
-  @include button($color: red, $size: 22px);
-  @include media-query($on-large){
-    font-size: 3rem;
-  }
 }
 
 @media screen and (min-width: $on-medium){
